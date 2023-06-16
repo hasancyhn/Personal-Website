@@ -1,0 +1,9 @@
+<?php 
+session_start();
+unset($_SESSION["ADMIN"]);
+unset($_SESSION["KULLANICI"]);
+unset($_SESSION["AD_SOYAD"]);
+session_destroy();
+header("Location:makaleler.php");
+print_r($_SESSION);
+?>
